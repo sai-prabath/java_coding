@@ -64,6 +64,7 @@ public class Solution {
         for(Book book : sortedBooks){
             System.out.println(book);
         }
+        sc.close();
     }
 }
 
