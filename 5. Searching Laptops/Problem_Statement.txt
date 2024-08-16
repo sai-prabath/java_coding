@@ -1,0 +1,80 @@
+Create a class Laptop with the below attributes:
+
+laptopId - int 
+brand - String 
+osType - String
+price - double
+rating - int
+
+- use parameterized constructor as required
+- set attributes private  and use getters and setters (optional)
+
+Create class Solution with main method.
+
+Implement two static methods in Solution class.
+1. countOfLaptopsByBrand
+2. searchLaptopByOsType 
+
+countOfLaptopsByBrand method:
+- This method will take two input parameters - array of Laptop objects and a String parameter.
+- The method will return the count of laptops from array of Laptop object for the given brand(String parameter passed) whose rating is more than 3.
+- If no Laptop with the above condition is present in the array of Laptop objects, then the method should return 0.
+
+searchLaptopByOsType method:
+- This method will take two input parameters - array of Laptop objects and a String parameter.
+- The method will refurn Laptop obiect array in an descending order of their laptopId, from the array of Laptop objects whose os attribute matches with the given OS(String parameter passed).
+- If no Laptop with the given OS is present in the array of Laptop objects, then the method should return null.
+
+Note : 
+- No two Laptop object would have the same laptopId.
+- All the searches should be case insensitive.
+- The above mentioned static methods should be called from the main method.
+
+For countOfLaptopsByBrand method:
+The main method should print the count of laptops as it is, if the returned value is greater than 0.
+if it's 0 then it should print "The given brand is not available".
+
+For searchLaptopByOsType method:
+The main method should print the laptopId and rating from the returned Laptop object array if the returned value is not null.
+if the returned value is null then it should print "The given os is not available".
+
+Before calling these static methods in main,
+- use Scanner object to read the values of Four Laptop objects referring attributes in the above mentioned attribute sequence.
+- Next, read two String values for capturing brand and os.
+
+Consider below sample input and output:
+
+Input:
+
+123
+HP
+Windows
+3500
+6824
+5
+124
+Apple
+Mac OS
+70000
+5
+125
+Dell
+Ubuntu
+30000
+4
+126
+HP
+Windows
+40000
+4
+HP
+windows
+
+Output:
+
+2
+126
+4
+123
+5
+
