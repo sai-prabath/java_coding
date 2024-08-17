@@ -50,7 +50,6 @@ Input:
 HP
 Windows
 3500
-6824
 5
 124
 Apple
