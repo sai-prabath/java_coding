@@ -1,0 +1,81 @@
+6. Searching Hotels - count and search methods:
+
+Create a class Hotel with the below attributes:
+hotelld - int 
+hotelName - String
+dateOfBooking - String (in the format dd-mon-yyyy)
+noOfRoomsBooked - int 
+wifiFacility - String 
+totalBill- double
+- The above attributes can be private with write getters, setters (optional)
+- use parameterized constructor as required.
+
+Create class Solution with main method.
+
+Implement two static methods in Solution class.
+1. noOfRoomsBookedInGivenMonth
+2. searchHotelByWifiOption
+
+noOfRoomsBookedInGivenMonth method:
+- This method will take two input parameter - array of Hotel objects and a String parameter.
+- The method will return the total numbers of rooms booked from array of Hotel objects for the given month(String parameter passed).
+- If no rooms are booked for the given month in the array of Hotel objects, then the method should return 0.
+
+searchHotelByWifiOption method:
+- This method will take two input parameter - array of Hotel objects and a String parameter
+- The method will return Hotel object with second highest totalbill from the array of Hotel objects where wifiFacility attribute matches with the given wifi facility (String parameter passed).
+- If no Hotel with the given wifi option is present in the array of Hotel objects, then the method should return null.
+
+The above mentioned static methods should be called from the main method.
+
+For noOfRoomsBookedInGivenMonth method:
+- The main method should print the total number of booked rooms as it is, if the returned value is greater than O.
+- else it should print "No rooms booked in the given month"
+
+For searchHotelByWifiOption method:
+- The main method should print the hotelId from the returned Hotel obiect if the returned value is not null.
+- if the returned value is not null then it should print "No such option available"
+
+Before calling these static methods in main, use Scanner object to read the values of four Hotel objects referring attributes in the above mentioned attribute sequence.
+Next, read the value of two String parameters for capturing the months and wifi option
+
+Note:
+- No two Hotel object would have the same hotelId.
+- No two Hotel object would have the same totalbill.
+- The Array either has at least two objects with specified wifi option or no object with specified wifi option.
+- All the searches should be case insensitive.
+- dateOfBooking is stored in the format dd-mon-yyyy(eg. 01-Jan-2022)
+
+Inputl:
+
+101 -> 1
+Best Stay
+01-jan-2022
+10
+Yes
+20000
+102 -> 2
+Apple Stay
+12-Feb-2022
+3 
+Yes
+4000
+103 -> 3
+Accord
+11-May-2022
+5
+Yes
+15000
+104 -> 4
+Royal Park
+22-Dec-2021
+7
+Yes
+12000
+May -> month to search
+Yes -> wifi option to search
+
+Output1:
+
+5
+103
