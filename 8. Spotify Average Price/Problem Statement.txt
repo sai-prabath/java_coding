@@ -1,0 +1,85 @@
+You need to build a simple data processing application for managing subscription plans of a music streaming service. 
+
+Your task is to create a `Spotify` class to represent subscription plans and 
+implement a method that calculates the average subscription price based on certain filters.
+
+
+Class Details
+
+1. Spotify Class:
+
+   - Attributes make attributes private:
+     - `id` (int): Unique identifier for each subscription plan.
+     - `name` (String): Name of the subscription service (e.g., Spotify, Netflix).
+     - `stype` (String): Type of subscription (e.g., monthly, yearly).
+     - `price` (double): Price of the subscription plan.
+     - `groupsessions` (String): Specifies if group sessions are available ("yes" or "no").
+
+   - Constructor:
+     - Initialize the attributes with the given values.
+     - Use getters and setters
+
+2. Solution Class:
+
+   - Method:
+     - `SearchSpotifyAvg`: This method takes an array of `Spotify` objects and two `String` values `stype` and `groupsessions` as input parameters.
+     - It calculates the average price of subscriptions that match the `stype` and `groupsessions` values.
+       - If there are matching subscriptions, the method returns the average price.
+       - If no matching subscriptions are found, it returns `0`.
+
+3. Input and Output Requirements
+
+- Input:
+  - Four sets of data for creating `Spotify` objects, each containing:
+    - An integer `id`.
+    - A `name` string.
+    - A `stype` string indicating the type of subscription (e.g., "monthly", "yearly").
+    - A double `price` representing the subscription cost.
+    - A `groupsessions` string specifying if group sessions are available ("yes" or "no").
+  - Two additional `String` inputs: `s1` and `s2`, representing the subscription type and group session availability to filter for the average price calculation.
+
+- Output:
+  - If there are matching subscriptions, print the calculated average price.
+  - If no matches are found, print "No such users".
+
+-------------------------------------------------------------------------------------
+
+Sample Input:
+
+  1
+  netflix
+  monthly
+  1000
+  yes
+  2
+  prime
+  monthly
+  2000
+  yes
+  3
+  hotstar
+  yearly
+  500
+  no
+  4
+  aha
+  yearly
+  1000
+  no
+  monthly
+  yes
+
+Sample Output:
+
+  1500.0
+
+Explanation:
+- The program calculates the average price of subscriptions that are "monthly" and have "yes" for group sessions.
+- Here, two subscriptions match these criteria: "netflix" and "prime", with prices 1000 and 2000.
+- The average price is `(1000 + 2000) / 2 = 1500.0`.
+
+
+
+---------------------
+TCS IPA 7th Nov 2024
+---------------------
