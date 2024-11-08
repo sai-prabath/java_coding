@@ -1,0 +1,48 @@
+You are given a task to write a program that processes a string of characters, extracts any digits from it, and calculates their sum.
+The program should print the sum if it is less than 15. Otherwise, it should print "No Digits".
+
+Requirements
+
+1. Main Method:
+   - In the main method, read a single line of input (string) from the user.
+   - Initialize a counter `count` to zero.
+   - Code the Implementation
+   - After summing all valid digits, check the final value of `count`:
+     - If `count` is less than 15, print the value of `count`.
+     - If `count` is 15 or more, print "No Digits".
+
+2. Input and Output Requirements:
+
+- Input:
+  - A single line of text, which can contain any characters (letters, numbers, symbols, spaces, etc.).
+
+- Output:
+  - If the sum of the digits in the input string is less than 15, output the sum.
+  - If the sum is 15 or greater, output "No Digits".
+
+-------------------------------------------------------------------------------------
+
+Sample Input 1:
+  abc123
+
+Sample Output 1:
+  6
+
+Explanation:
+  - The digits in the input string "abc123" are '1', '2', and '3', which sum up to 6. Since 6 is less than 15, the program outputs 6.
+
+-------------------------------------------------------------------------------------
+
+Sample Input 2:
+  45xyz8
+
+Sample Output 2:
+  No Digits
+
+Explanation:
+  - The digits in the input string "45xyz8" are '4', '5', and '8', which sum up to 17. Since 17 is 15 or greater, the program outputs "No Digits".
+
+
+---------------------
+TCS IPA 7th Nov 2024
+---------------------
